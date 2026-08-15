@@ -30,7 +30,7 @@
 -->
 
 <!-- Babel standalone: lets the browser compile the JSX below on the fly -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.26.10/babel.min.js"></script>
 </head>
 <body class="bg-[#0b1220] text-white">
 <div id="root">
@@ -39,7 +39,7 @@
     <p style="font-size:13px;">Jika halaman ini tidak berubah dalam beberapa detik, pastikan koneksi internet aktif (halaman ini memuat beberapa file dari internet saat dibuka).</p>
   </div>
 </div>
-<div id="error-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#7f1d1d;color:#fff;padding:12px 16px;font-family:monospace;font-size:11px;z-index:9999;max-height:45vh;overflow:auto;white-space:pre-wrap;"></div>
+
 
 <script>
   function showError(msg) {
@@ -55,7 +55,7 @@
   });
 </script>
 
-<script type="text/babel" data-presets="react">
+<script type="text/babel" data-presets="react" data-type="script">
 try {
   var { useState, useEffect, useRef, useMemo, useCallback } = React;
 
